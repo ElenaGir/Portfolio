@@ -23,53 +23,54 @@
     <meta property="twitter:description" content="Elena Girard - Portfolio développeur web full stack - Création de sites internet">
     <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
     <meta name="description" content="Elena Girard - Portfolio développeur web full stack - Création de sites internet" />
-    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="./dist/output.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js" integrity="sha512-6zTDRWNxo8vI6JZYDCwhrJpg5icK3P4HNnW3czsO5Scb3lAoPDam+/wF3eog4hxcl0h44d0XlIcFkuoSaWHQ2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Elena Girard - Portfolio</title>
 </head>
-<body class="">
+<body class="w-screen">
     <header>
-        <nav class="flex justifi-center w-screen">
-            <input type="checkbox" id="burger-checkbox">
+        <nav class="flex justify-center w-full mt-14">
+            <input type="checkbox" id="burger-checkbox" class="hidden">
             <label for="burger-checkbox">
-                <div class="nav-container">
+                <div class="nav-container m-auto flex justify-center items-center cursor-pointer">
                     <div class='bul' id='bulle1'></div>
                     <div class='bul' id='bulle2'></div>
                     <div class='bul' id='bulle3'></div>  
                 </div>
-                <div class="nav-container2">
+                <div class="nav-container2 flex justify-center items-center cursor-pointer">
                     <div class='bul2' id='bulle4'></div>
                     <div class='bul2' id='bulle5'></div>
                     <div class='bul2' id='bulle6'></div>  
                 </div>
             </label>
 
-            <div class="menu-wrapper">
-                <div class="menu">
+            <div class="menu-wrapper fixed flex ">
+                <div class="navigation">
                     <ul id="menu-accordeon">
                         <li><a href="#">Lien menu 1</a>
-                            <ul>
-                                <li><a href="#">lien sous menu1</a></li>
-                                <li><a href="#">lien sous menu 1</a></li>
-                                <li><a href="#">lien sous menu 1</a></li>
-                                <li><a href="#">lien sous menu 1</a></li>
+                            <ul> 
+                                <li><a href="#">lien sous menu 01</a></li>
+                                <li><a href="#">lien sous menu 01</a></li>
+                                <li><a href="#">lien sous menu 01</a></li>
+                                <li><a href="#">lien sous menu 01</a></li>
                             </ul>
                         </li>
 
                         <li><a href="#">Lien menu 2</a>
                             <ul>
-                                <li><a href="#">Lien sous menu 2</a></li>
-                                <li><a href="#">Lien sous menu 2</a></li>
-                                <li><a href="#">Lien sous menu 2</a></li>
-                                <li><a href="#">Lien sous menu 2</a></li>
+                                <li><a href="#">Lien sous menu 02</a></li>
+                                <li><a href="#">Lien sous menu 02</a></li>
+                                <li><a href="#">Lien sous menu 02</a></li>
+                                <li><a href="#">Lien sous menu 02</a></li>
                             </ul>
                         </li>
 
                         <li><a href="#">Lien menu 3</a>
                             <ul>
-                                <li><a href="#">Lien sous menu 3</a></li>
-                                <li><a href="#">Lien sous menu 3</a></li>
-                                <li><a href="#">Lien sous menu 3</a></li>
-                                <li><a href="#">Lien sous menu 3</a></li>
+                                <li><a href="#">Lien sous menu 03</a></li>
+                                <li><a href="#">Lien sous menu 03</a></li>
+                                <li><a href="#">Lien sous menu 03</a></li>
+                                <li><a href="#">Lien sous menu 03</a></li>
                             </ul>
                         </li>  
                     </ul>
@@ -80,6 +81,6 @@
     <main>
          
     </main>
-    
+ <script src="script_nav.js"></script>   
 </body>
 </html>
