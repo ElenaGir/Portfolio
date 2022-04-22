@@ -5,18 +5,18 @@
 
 /*bulles  */
 .bul  {
-  width: 1.5em;
-  height: 1.5em;
+  width: 1em;
+  height: 1em;
   margin: 5px;
-  border-radius: 20px;
+  border-radius: 10px;
   transition: background 2s ease;
   background: #90DBF4;
 }
 .bul2  {
-  width: 1.5em;
-  height: 1.5em;
+  width: 1em;
+  height: 1em;
   margin: 5px;
-  border-radius: 20px;
+  border-radius: 10px;
   transition: background 2s ease;
   background: #90DBF4;
 }
@@ -34,9 +34,7 @@
 }
 
 .navigation a {
-   
     color: black;
-  
     transition: all .2s ease-in-out;
 }
 
@@ -44,11 +42,7 @@
     color: #90DBF4;
 }
 /*  */
-#menu-accordeon {
-    list-style:none;
-    text-align: center;
-    
-  }
+
   #menu-accordeon ul {
     list-style:none;
     text-align: center;
@@ -59,14 +53,11 @@
      overflow: hidden;
      transition: all 1s;
      box-shadow: none;
-    
-    
+  
   }
   #menu-accordeon a {
     display:block;
     text-decoration: none;
-   
-   
   }
  
   #menu-accordeon li:hover li {

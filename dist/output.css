@@ -508,22 +508,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: center;
 }
 
+.text-center {
+  text-align: center;
+}
+
 /*bulles  */
 
 .bul  {
-  width: 1.5em;
-  height: 1.5em;
+  width: 1em;
+  height: 1em;
   margin: 5px;
-  border-radius: 20px;
+  border-radius: 10px;
   transition: background 2s ease;
   background: #90DBF4;
 }
 
 .bul2  {
-  width: 1.5em;
-  height: 1.5em;
+  width: 1em;
+  height: 1em;
   margin: 5px;
-  border-radius: 20px;
+  border-radius: 10px;
   transition: background 2s ease;
   background: #90DBF4;
 }
@@ -551,11 +555,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 /*  */
-
-#menu-accordeon {
-  list-style:none;
-  text-align: center;
-}
 
 #menu-accordeon ul {
   list-style:none;
