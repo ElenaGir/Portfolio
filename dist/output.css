@@ -468,16 +468,62 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .fixed {
   position: fixed;
+}
+
+.top-44 {
+  top: 11rem;
 }
 
 .m-auto {
   margin: auto;
 }
 
-.mt-14 {
-  margin-top: 3.5rem;
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 
 .flex {
@@ -486,6 +532,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .hidden {
   display: none;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-screen {
@@ -508,8 +558,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: center;
 }
 
-.text-center {
-  text-align: center;
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 /*bulles  */
@@ -535,9 +591,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 /* nav */
 
 .menu-wrapper {
-  top: 15vh;
   left: -100%;
-  font-size: 50px;
   transition: all .5s ease-in-out;
 }
 
@@ -554,25 +608,53 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: #90DBF4;
 }
 
+.navigation a:after {
+  content: '';
+  display: block;
+  bottom: 2px;
+  width: 0%;
+  left: 0px;
+  height: 1px;
+  transition: 0.5s cubic-bezier(0.72,-0.01, 0.19, 0.92);
+  background: #90DBF4;
+}
+
+.navigation a:hover:after {
+  width: 100%;
+}
+
 /*  */
 
-#menu-accordeon ul {
-  list-style:none;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Sura&display=swap');
+
+*{
+  font-family: 'Sura', serif;
 }
 
-#menu-accordeon li li {
-  max-height:0;
+.question::after {
+  transition: 0.2s;
+}
+
+.answercont {
+  max-height: 0;
   overflow: hidden;
-  transition: all 1s;
-  box-shadow: none;
+  transition: 0.3s;
 }
 
-#menu-accordeon a {
-  display:block;
-  text-decoration: none;
-}
-
-#menu-accordeon li:hover li {
+.answercont ul li:hover li {
   max-height: 15em;
+}
+
+.answercont ul li {
+  list-style:none;
+  margin-bottom:2px;
+  text-align: right;
+  text-decoration: none;
+  color: black;
+}
+
+/* ----------------- */
+
+body{
+  background-color: #F7F7F7;
 }

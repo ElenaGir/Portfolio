@@ -23,9 +23,7 @@
 
 /* nav */
 .menu-wrapper {
-    top: 15vh;
     left: -100%;
-    font-size: 50px;
     transition: all .5s ease-in-out;
 }
 
@@ -39,27 +37,45 @@
 }
 
 .navigation a:hover {
-    color: #90DBF4;
+    color: #90DBF4;  
+}
+.navigation a:after {
+    content: '';
+    display: block;
+    bottom: 2px;
+    width: 0%;
+    left: 0px;
+    height: 1px;
+    transition: 0.5s cubic-bezier(0.72,-0.01, 0.19, 0.92);
+    background: #90DBF4;
+}
+.navigation a:hover:after {
+    width: 100%;
 }
 /*  */
-
-  #menu-accordeon ul {
-    list-style:none;
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Sura&display=swap');
+*{
+    font-family: 'Sura', serif;  
+}
+  .question::after {
+    transition: 0.2s;
   }
-  
-  #menu-accordeon li li {
-     max-height:0;
-     overflow: hidden;
-     transition: all 1s;
-     box-shadow: none;
-  
+  .answercont {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
   }
-  #menu-accordeon a {
-    display:block;
-    text-decoration: none;
+  .answercont ul li:hover li {
+      max-height: 15em;
   }
- 
-  #menu-accordeon li:hover li {
-    max-height: 15em;
-  }
+  .answercont ul li {
+      list-style:none;
+      margin-bottom:2px;
+      text-align: right;
+      text-decoration: none;
+      color: black;
+    }
+    /* ----------------- */
+    body{
+      background-color: #F7F7F7;
+    }
