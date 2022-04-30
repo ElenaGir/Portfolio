@@ -510,8 +510,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 11rem;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
+.-z-50 {
+  z-index: -50;
+}
+
 .m-auto {
   margin: auto;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .mt-8 {
@@ -522,10 +534,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2rem;
 }
 
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-
 .flex {
   display: flex;
 }
@@ -534,12 +542,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.h-full {
-  height: 100%;
+.h-screen {
+  height: 100vh;
+}
+
+.h-2 {
+  height: 0.5rem;
 }
 
 .w-screen {
   width: 100vw;
+}
+
+.w-4 {
+  width: 1rem;
 }
 
 .w-full {
@@ -550,6 +566,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   cursor: pointer;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .items-center {
   align-items: center;
 }
@@ -558,14 +578,59 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: center;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.justify-between {
+  justify-content: space-between;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.object-left-top {
+  -o-object-position: left top;
+     object-position: left top;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.drop-shadow-2xl {
+  --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 /*bulles  */
@@ -588,7 +653,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   background: #90DBF4;
 }
 
-/* nav */
+/* nav accordeon-------------*/
 
 .menu-wrapper {
   left: -100%;
@@ -604,6 +669,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition: all .2s ease-in-out;
 }
 
+/* nav soulignement------------ */
+
 .navigation a:hover {
   color: #90DBF4;
 }
@@ -613,17 +680,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: block;
   bottom: 2px;
   width: 0%;
-  left: 0px;
   height: 1px;
   transition: 0.5s cubic-bezier(0.72,-0.01, 0.19, 0.92);
   background: #90DBF4;
 }
 
 .navigation a:hover:after {
-  width: 100%;
+  width: 90%;
 }
 
-/*  */
+/* ----------------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Sura&display=swap');
 
@@ -648,13 +714,79 @@ Ensure the default browser behavior of the `hidden` attribute.
 .answercont ul li {
   list-style:none;
   margin-bottom:2px;
-  text-align: right;
   text-decoration: none;
   color: black;
 }
 
-/* ----------------- */
+/* ----------------- ------------*/
 
 body{
   background-color: #F7F7F7;
 }
+
+/* -----animation lettres page d'accueil---- */
+
+.anim {
+  display: inline-block;
+}
+
+.rubberBand {
+  color: #90DBF4;
+  text-shadow: 2px 2px #FFCFD2;
+  transition: all 0.5s ease-out;
+  -webkit-animation-name: squeeze;
+          animation-name: squeeze;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes squeeze {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:text-9xl {
+    font-size: 8rem;
+    line-height: 1;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+} 
+  

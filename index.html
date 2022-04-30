@@ -27,10 +27,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js" integrity="sha512-6zTDRWNxo8vI6JZYDCwhrJpg5icK3P4HNnW3czsO5Scb3lAoPDam+/wF3eog4hxcl0h44d0XlIcFkuoSaWHQ2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Elena Girard - Portfolio</title>
 </head>
-<body class="w-screen h-full">
+<body class="h-screen w-screen overflow-x-hidden">
     <header>
-        <nav class="flex justify-center w-full mt-8 ">
-            <p class="logo"> elena girard</p>
+        <nav class="p-2">
+            <p class="logo h-2 w-4 text-xl object-left-top "> elena girard</p>
             <input type="checkbox" id="burger-checkbox" class="hidden">
             <label for="burger-checkbox">
                 <div class="nav-container m-auto flex justify-center items-center cursor-pointer">
@@ -45,14 +45,14 @@
                 </div>
             </label>
 
-            <div class="menu-wrapper fixed flex justify-center top-44 text-3xl">
+            <div class="menu-wrapper fixed flex justify-center top-44 text-3xl lg:text-5xl">
                 <div class="navigation">
                     <a href="#">SAVOIR PLUS SUR MOI</a>
                     <div class="container">
                         <div class="question mt-10">
                             <a href="#">VOIR MES PROJETS</a>
                         </div>
-                        <div class="answercont text-3xl">
+                        <div class="answercont text-2xl lg:text-5xl">
                             <ul>
                                 <li><a href="#">RESTAURANT</a></li>
                                 <li><a href="#">GITHUB</a></li>
@@ -65,7 +65,7 @@
                         <div class="question mt-8"> 
                             <a href="#">VOIR MES LABS</a>
                         </div>
-                        <div class="answercont text-3xl">
+                        <div class="answercont text-2xl lg:text-5xl">
                             <ul>
                                 <li><a href="#">FORMULAIRE DE CONTACT</a></li>
                                 <li><a href="#">BOUTONS NÉOMORPHISME</a></li>
@@ -78,7 +78,7 @@
                         <div class="question mt-8 mb-8">
                             <a href="#">LIRE MON BLOG</a>
                         </div>
-                        <div class="answercont text-3xl">
+                        <div class="answercont text-2xl lg:text-5xl">
                             <ul>
                                 <li><a href="#"></a></li>
                                 <li><a href="#">The parallax effect</a></li>
@@ -92,21 +92,35 @@
             </div>
         </nav>
     </header>
-    <main>
-        <h1>
-            <p>hello,</p>
-            <p>Je suis Elena Girard</p>
-            <p>développeuse web fullstack</p>
-        </h1>
-    <section class="reseaux">
-
-    </section>
-        <h2>à propos de moi</h2>    
+    <main class="w-full">
+        <section class ="flex justify-center items-center flex-col">
+            <h1 class="text-5xl lg:text-9xl">
+                <p>hello,</p>
+                <p id="break-me">Je suis Elena </p>
+                <p >développeuse web fullstack</p>
+            </h1>
+            <div class="reseaux flex p-8">
+                <div class="p-4 "><img src="assets/github.webp" alt="icon GITHUB"></div> 
+                <div class="p-4"><img src="assets/linkedin.webp" alt="icon GITHUB"></div>
+                <div class="p-4"><img src="assets/codepen.webp" alt="icon GITHUB"></div>      
+            </div> 
+           
+            <h2 class="text-3xl"><a href="#">à propos de moi</a></h2>  
+           
+        </section> 
+        <section class="bonbons -z-50">
+            <div class="drop-shadow-2xl "><img src="assets/Ellipse 135.webp" alt="bonbon 135"></div>
+            <div class="drop-shadow-2xl"><img src="assets/Ellipse 136.webp" alt="bonbon 136"></div> 
+            <div class="drop-shadow-2xl"><img src="assets/Ellipse 137.webp" alt="bonbon 137"></div> 
+            <div class="drop-shadow-2xl"><img src="assets/Ellipse 138.webp" alt="bonbon 138"></div> 
+            <div class="drop-shadow-2xl"><img src="assets/Ellipse 140.webp" alt="bonbon 140"></div>
+        </section> 
     </main>
-    <footer class="flex mb-5">
-      <p>©EGirard, 2022 Tous droit réservés </p>
-      <p>Mentions légales</p>  
+    <footer class="flex text-xs justify-between p-2 fixed bottom-0 w-full">
+      <p class="">©EGirard, 2022 Tous droit réservés </p>
+      <p class="">Mentions légales</p>  
     </footer>
  <script src="script_nav.js"></script>   
+ <script src="animation.js"></script>
 </body>
 </html>

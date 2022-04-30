@@ -59,7 +59,6 @@ navdots.addEventListener('click', () => {
 
 // menu accordeon
 let question = document.querySelectorAll(".question");
-
 question.forEach(question => {
   question.addEventListener("click", event => {
     const active = document.querySelector(".question.active");
@@ -76,3 +75,19 @@ question.forEach(question => {
     }
   })
 })
+// --------------------------fond page principale-------------
+
+const input = document.querySelector('input');
+const main = document.querySelector("main");
+const foot = document.querySelector("footer");
+
+// input.addEventListener("click", () => {
+//   if(getComputedStyle(main).display != "none"){
+//     main.style.display = "none";
+//     foot.style.display = "none";
+
+//   } else {
+//     location.reload();
+//   }
+// })
+
