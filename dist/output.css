@@ -506,6 +506,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .top-44 {
   top: 11rem;
 }
@@ -534,6 +538,58 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2rem;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.ml-9 {
+  margin-left: 2.25rem;
+}
+
+.mt-9 {
+  margin-top: 2.25rem;
+}
+
+.ml-64 {
+  margin-left: 16rem;
+}
+
+.mt-48 {
+  margin-top: 12rem;
+}
+
+.ml-32 {
+  margin-left: 8rem;
+}
+
+.mt-56 {
+  margin-top: 14rem;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.ml-40 {
+  margin-left: 10rem;
+}
+
+.ml-96 {
+  margin-left: 24rem;
+}
+
+.mt-28 {
+  margin-top: 7rem;
+}
+
 .flex {
   display: flex;
 }
@@ -542,16 +598,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .h-2 {
   height: 0.5rem;
 }
 
-.w-screen {
-  width: 100vw;
+.h-full {
+  height: 100%;
+}
+
+.max-h-full {
+  max-height: 100%;
 }
 
 .w-4 {
@@ -595,12 +651,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 0.5rem;
 }
 
-.p-8 {
-  padding: 2rem;
-}
-
 .p-4 {
   padding: 1rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
 }
 
 .text-xl {
@@ -779,13 +835,13 @@ body{
 }
 
 @media (min-width: 1024px) {
-  .lg\:text-9xl {
-    font-size: 8rem;
+  .lg\:text-5xl {
+    font-size: 3rem;
     line-height: 1;
   }
 
-  .lg\:text-5xl {
-    font-size: 3rem;
+  .lg\:text-9xl {
+    font-size: 8rem;
     line-height: 1;
   }
 } 
