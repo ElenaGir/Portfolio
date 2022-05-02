@@ -30,7 +30,6 @@
 }
 
 #burger-checkbox:checked ~ .menu-wrapper {
-
     left: 10%;
 }
 
@@ -128,4 +127,17 @@
         transform: scale3d(1, 1, 1);
       }
     } 
-  
+  main {
+      opacity: 1;
+      -webkit-transition: opacity 1000ms linear;
+      transition: opacity 1000ms linear;
+  }
+
+  /* #box1:hover {
+    left: 100%;
+    transform: translateX(-100%);
+  }
+  #box1{
+    transition: left 1s, transform 1s;
+    white-space: nowrap;
+  } */

@@ -1,4 +1,4 @@
-//animation gsap bulles barre de navigation
+// animation gsap bulles barre de navigation-------
 const navdots = document.querySelector('#burger-checkbox');
 let b1 = gsap.to('#bulle1', {
   y: -10, 
@@ -80,14 +80,15 @@ question.forEach(question => {
 const input = document.querySelector('input');
 const main = document.querySelector("main");
 const foot = document.querySelector("footer");
-
-// input.addEventListener("click", () => {
-//   if(getComputedStyle(main).display != "none"){
-//     main.style.display = "none";
-//     foot.style.display = "none";
-
-//   } else {
-//     location.reload();
-//   }
-// })
-
+let click = 0;
+input.addEventListener("click", () => {
+  click++;
+  if (click == 1){
+    main.style.visibility = "hidden";
+    
+  } 
+  if(click == 2) {
+    main.style.visibility = "visible";
+    click=0;
+  }
+})

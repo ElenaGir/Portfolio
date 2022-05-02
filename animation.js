@@ -19,6 +19,8 @@ for (let i = 0; i < all.length; i++) {
     all[i].classList.remove("rubberBand");
   });
 }
+
+//---------------- rebond de bonbons gsap---------------------------
 var mouv = gsap.timeline(
     {
       defaults:
@@ -33,7 +35,7 @@ var mouv = gsap.timeline(
   );
   
     mouv.to(box1, {y: 50})
-    mouv.to(box2, {y: 150}, "<2.4")
-    mouv.to(box3, {y: 80}, "<2.2") 
+    mouv.to(box2, {y: 100 ,x: 20}, "<2.4")
+    mouv.to(box3, {y: -50, x: 30}, "<2.2") 
     mouv.to(box4, {y: 70}, "<1.8")
-    mouv.to(box5, {y: 100}, "<1.4")
+    mouv.to(box5, {y: -70, x: 50}, "<1.4")
