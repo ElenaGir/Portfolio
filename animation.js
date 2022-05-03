@@ -21,21 +21,21 @@ for (let i = 0; i < all.length; i++) {
 }
 
 //---------------- rebond de bonbons gsap---------------------------
-var mouv = gsap.timeline(
-    {
-      defaults:
-        {
-          ease: "elastic.out(1, 0.5)", 
-          duration: 5, 
-          repeat: -1, 
-          repeatDelay: 10, 
-          yoyo:true
-         }
-     }
-  );
+// var mouv = gsap.timeline(
+//     {
+//       defaults:
+//         {
+//           ease: "elastic.out(1, 0.5)", 
+//           duration: 5, 
+//           repeat: -1, 
+//           repeatDelay: 10, 
+//           yoyo:true
+//          }
+//      }
+//   );
   
-    mouv.to(box1, {y: 50})
-    mouv.to(box2, {y: 100 ,x: 20}, "<2.4")
-    mouv.to(box3, {y: -50, x: 30}, "<2.2") 
-    mouv.to(box4, {y: 70}, "<1.8")
-    mouv.to(box5, {y: -70, x: 50}, "<1.4")
+//     mouv.to(box1, {y: 50})
+//     mouv.to(box2, {y: 150 ,x: 20}, "<2.4")
+//     mouv.to(box3, {y: -150, x: 30}, "<2.2") 
+//     mouv.to(box4, {y: 70}, "<1.8")
+//     mouv.to(box5, {y: -70, x: 50}, "<1.4")
