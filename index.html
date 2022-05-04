@@ -90,71 +90,75 @@
         </nav>
     </header>
 
-    <aside class="bonbons -z-50  w-full absolute bottom-0 h-full">
+    <aside class="bonbons -z-50  w-full absolute  h-full">
         <div  id="box1" class="drop-shadow-2xl absolute top-5 left-12"><img class="h-20 md:h-28 lg:h-40" src="assets/bonbon135.png" alt="bonbon 135" ></div>
         <div  id="box2" class="drop-shadow-2xl absolute bottom-36 right-2"><img class="h-36 md:h-52 lg:h-80" src="assets/bonbon136.png" alt="bonbon 136"></div> 
         <div  id="box3" class="drop-shadow-2xl absolute bottom-0 -left-3"><img class="h-60 md:h-64 lg:h-80" src="assets/bonbon137.png" alt="bonbon 137"></div> 
         <div  id="box4" class="drop-shadow-2xl absolute top-40 right-32 lg:left-96"><img class="h-24 md:h-48 lg:h-60" src="assets/bonbon138.png" alt="bonbon 138"></div> 
         <div  id="box5" class="drop-shadow-2xl absolute top-14 right-16 lg:right-96"><img class="h-20 md:h-32 lg:h-44" src="assets/bonbon140.png" alt="bonbon 140"></div>
     </aside> 
-    <main class="w-full ">
-        <section id="nom" class ="flex justify-center items-center flex-col">
-            <div class="text-5xl md:text-7xl mt-28 lg:text-9xl pl-4">
+    <main class="w-full h-full">
+        <section id="nom" class ="flex justify-center items-center flex-col h-screen">
+            <div class="text-5xl md:text-7xl lg:text-9xl">
                 <p>hello,</p>
                 <p id="break-me">Je suis Elena </p>
                 <p>développeuse web fullstack</p>
             </div>
-            <div class="reseaux flex ">
+            <div class="reseaux flex">
                 <div class="p-4"><img src="assets/github.webp" alt="icon GITHUB"></div> 
                 <div class="p-4"><img src="assets/linkedin.webp" alt="icon GITHUB"></div>
                 <div class="p-4"><img src="assets/codepen.webp" alt="icon GITHUB"></div>      
             </div> 
             <h2 class="text-3xl"><a href="#">à propos</a></h2>    
         </section> 
-        <section class="propos flex flex-col justify-center mt-96 w-full items-center h-screen">
+        <section class="propos flex flex-col justify-center  w-full items-center h-full">
             <img class="h-60" src="assets/portrait.png" alt="portrait sur un fond rond de couleur bleu "> 
             <div class="text-justify text-2xl p-6" id="propos">
                 <p> à propos de moi </p> 
             </div>
-            <div class="p-6 text-xl text-justify">
+            <div class="text-xl text-justify w-10/12">
                 <p>
                  Je suis  une développeuse web junior  avec des compétences en développement front-end.   
                  Je développe des sites Web avec HTML, CSS et JavaScript. J’utilise également des frameworks, PHP et SQL. J'ai des compétences dans l'utilisation de logiciel de conception comme Figma.
                  Étant une femme active et axée sur les résultats, je travaille toujours pour obtenir le meilleur résultat sur chaque projet sur lequel je mets ma main.    
                 </p>
             </div>
-            <button type="submit" class="text-xl w-64  bg-[#90DBF4] hover:bg-[#8EECF5]  h-12 drop-shadow-lg rounded-md">Télécharger mon CV</button>   
-            <figure class="absolute -z-10 left-7 bottom-96 drop-shadow-2xl"><img class="h-32" src="assets/bonbon140.png" alt="bonbon 140"></figure>
+            <div class="p-6"> <button type="submit" class="text-xl w-64 bg-[#90DBF4] hover:bg-[#8EECF5]  h-12 drop-shadow-lg rounded-md">Télécharger mon CV</button>   </div>
+            
+            <!-- <figure class="absolute -z-10  drop-shadow-2xl"><img class="h-32" src="assets/bonbon140.png" alt="bonbon 140"></figure> -->
         </section>
-        <section class="projet w-full">
-            <p class="ml-4 text-5xl border-b-2 border-[#90DBF4] w-80 pb-4">MES PROJETS</p>
-            <div class="projet1 flex flex-col justify-center items-center w-full">
-                <div class="head">
-                    <p class=" ml-4 text-3xl pb-4 text-[#90DBF4] border-b-2 border-[#90DBF4] w-80 mt-6 flex">SHUFFLE CAFE</p>
-                    <P>TECHNOS UTILISÉES</P>
-                    <P class="w-44">
-                        HTML5, CSS3, JS,
-                        TAILWIND, GSAP
-                        PHP, MYSQL,GITHUB
-                    </p>
-                    <div>
-                        <p>EQUIPE</p>
+        <section class="projet w-full pt-6 flex flex-col justify-center items-center">
+            <p class="text-5xl border-b-2 border-[#90DBF4] w-10/12">MES PROJETS</p>
+            <div class="projet1  w-full">
+                <div class="head flex flex-col justify-center items-center">
+                    <p class=" text-3xl  text-[#90DBF4] border-b-2 border-[#90DBF4] w-10/12 mt-6 flex-none ">SHUFFLE CAFE</p>
+                    <div class="w-10/12 flex  space-x-10 pt-6">
+                        <p class=" text-[#90DBF4]">TECHNOS UTILISÉES</p>
+                        <p class="w-36">
+                            HTML5, CSS3, JS,
+                            TAILWIND, GSAP,
+                            PHP, MYSQL,GITHUB
+                        </p>
+                    </div>
+                    <div class=" techno flex w-10/12 space-x-32 pt-2">
+                        <p class=" text-[#90DBF4] ">EQUIPE</p>
                         <p>AUGUST GROS</p>
                     </div>
                 </div>
-                <div class="descrip flex flex-col justify-center items-center w-full">
-                    <p>DESCRIPTION</p>
-                    <p class="p-6 text-xl text-justify ">Le projet  d’un site web pour un restaurant.
+                <div class="descrip flex flex-col justify-center items-center w-full pt-6">
+                    <p class="flex-none w-10/12  text-[#90DBF4] border-b-2 border-[#90DBF4]">DESCRIPTION</p>
+                    <p class="w-10/12 text-xl text-justify pt-2">Le projet  d’un site web pour un restaurant.
                         Il à été créer pendant ma formation de developpeuse web. 
                         Le site  contien une présentation du restaurant,  la carte, un formulaire de contact et un back-office permettant d’éditer le menu. 
                         Il est  responsive et dynamique. Le back-office  permet d’ajouter, modifier ou supprimer un élément du menu. 
-                        Formulaire de contact permet d’envoyer le mail.</p>
+                        Formulaire de contact permet d’envoyer un mail.</p>
+                        <div class="hover:text-[#90DBF4] cursor-pointer  border-b-2 border-[#90DBF4] text-xl w-10/12 pt-6">acceder au site</div>
                 </div>
-                <div>acceder au site</div>
-                <div class="images">
-                 <img src="assets/resto_page1.png"  alt="page principale de projet restaurant dans l'ecran de mac">
-                 <img src="assets/resto_page2.png"  alt="page de contact de projet restaurant dans l'ecran de mac">
-                 <img src="assets/resto_resp.png"  alt="representation responsive de projet restaurant dans l'ecran d'iphone">
+                
+                <div class="images flex flex-col justify-center items-center w-full pt-6">
+                 <img class="pt-6" src="assets/resto_page1.png"  alt="page principale de projet restaurant dans l'ecran de mac">
+                 <img class="pt-6" src="assets/resto_page2.png"  alt="page de contact de projet restaurant dans l'ecran de mac">
+                 <img class="pt-6" src="assets/resto_resp.png"  alt="representation responsive de projet restaurant dans l'ecran d'iphone">
                 </div>
             </div>
             
