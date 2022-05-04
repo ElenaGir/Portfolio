@@ -25,72 +25,82 @@
     <link rel="stylesheet" href="./dist/output.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js" integrity="sha512-6zTDRWNxo8vI6JZYDCwhrJpg5icK3P4HNnW3czsO5Scb3lAoPDam+/wF3eog4hxcl0h44d0XlIcFkuoSaWHQ2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
-<body class="overflow-x-hidden">
+<body class="overflow-x-hidden bg-[#F7F7F7] dark:bg-[#262626]">
     <header class="sticky top-0">
-        <nav class="p-2 backdrop-blur-sm bg-white/30">
-            <p class="logo h-2 w-4 text-xl object-left-top"> elena girard</p>
-            <input type="checkbox" id="burger-checkbox" class="hidden">
-            <label for="burger-checkbox">
-                <div class="nav-container m-auto flex justify-center items-center cursor-pointer">
-                    <div class='bul' id='bulle1'></div>
-                    <div class='bul' id='bulle2'></div>
-                    <div class='bul' id='bulle3'></div>  
-                </div>
-                <div class="nav-container2 flex justify-center items-center cursor-pointer">
-                    <div class='bul2' id='bulle4'></div>
-                    <div class='bul2' id='bulle5'></div>
-                    <div class='bul2' id='bulle6'></div>  
-                </div>
-            </label>
-            <div class="menu-wrapper fixed flex justify-center top-44 text-3xl lg:text-7xl">
-                <div class="navigation">
-                    <a href="#">SAVOIR PLUS SUR MOI</a>
-                    <div class="container">
-                        <div class="question mt-10">
-                            <a href="#">VOIR MES PROJETS</a>
+        <nav class="p-2 backdrop-blur-sm bg-white/30"> 
+            <div class="flex w-full justify-between">
+                <p class="logo text-xl"> elena girard</p>
+                <!-- ------menu accordeon----------------------------------------------- -->
+                <div class="">
+                    <input type="checkbox" id="burger-checkbox" class="hidden">
+                    <label for="burger-checkbox">
+                        <div class="nav-container m-auto flex justify-center items-center cursor-pointer">
+                            <div class='bul' id='bulle1'></div>
+                            <div class='bul' id='bulle2'></div>
+                            <div class='bul' id='bulle3'></div>  
                         </div>
-                        <div class="answercont text-2xl lg:text-7xl">
-                            <ul>
-                                <li><a href="#">RESTAURANT</a></li>
-                                <li><a href="#">GITHUB</a></li>
-                                <li><a href="#">PROJET</a></li>
-                                <li><a href="#">PROJET</a></li>
-                            </ul> 
-                        </div> 
-                    </div>
-                    <div class="container">
-                        <div class="question mt-8"> 
-                            <a href="#">VOIR MES LABS</a>
+                        <div class="nav-container2 flex justify-center items-center cursor-pointer">
+                            <div class='bul2' id='bulle4'></div>
+                            <div class='bul2' id='bulle5'></div>
+                            <div class='bul2' id='bulle6'></div>  
                         </div>
-                        <div class="answercont text-2xl lg:text-7xl">
-                            <ul>
-                                <li><a href="#">FORMULAIRE DE CONTACT</a></li>
-                                <li><a href="#">BOUTONS NÉOMORPHISME</a></li>
-                                <li><a href="#">LAB</a></li>
-                                <li><a href="#">LAB</a></li>
-                            </ul> 
-                        </div> 
-                    </div>
-                    <div class="container">
-                        <div class="question mt-8 mb-8">
-                            <a href="#">LIRE MON BLOG</a>
+                    </label>
+                    <div class="menu-wrapper fixed flex justify-center top-44 text-3xl lg:text-7xl ">
+                        <div class="navigation">
+                            <a href="#">SAVOIR PLUS</a>
+                            <div class="container">
+                                <div class="question mt-10">
+                                    <a href="#">VOIR MES PROJETS</a>
+                                </div>
+                                <div class="answercont text-2xl lg:text-7xl">
+                                    <ul>
+                                        <li><a href="#">RESTAURANT</a></li>
+                                        <li><a href="#">GITHUB</a></li>
+                                        <li><a href="#">PROJET</a></li>
+                                        <li><a href="#">PROJET</a></li>
+                                    </ul> 
+                                </div> 
+                            </div>
+                            <div class="container">
+                                <div class="question mt-8"> 
+                                    <a href="#">VOIR MES LABS</a>
+                                </div>
+                                <div class="answercont text-2xl lg:text-7xl">
+                                    <ul>
+                                        <li><a href="#">FORMULAIRE DE CONTACT</a></li>
+                                        <li><a href="#">BOUTONS NÉOMORPHISME</a></li>
+                                        <li><a href="#">LAB</a></li>
+                                        <li><a href="#">LAB</a></li>
+                                    </ul> 
+                                </div> 
+                            </div>
+                            <div class="container">
+                                <div class="question mt-8 mb-8">
+                                    <a href="#">LIRE MON BLOG</a>
+                                </div>
+                                <div class="answercont text-2xl lg:text-7xl">
+                                    <ul>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#">The parallax effect</a></li>
+                                        <li><a href="#">Les étapes de création d'un site web</a></li>
+                                        <li><a href="#">Article</a></li>
+                                    </ul> 
+                                </div> 
+                            </div>
+                                <a href="#">CONTACTER MOI</a>
+                            </div>
                         </div>
-                        <div class="answercont text-2xl lg:text-7xl">
-                            <ul>
-                                <li><a href="#"></a></li>
-                                <li><a href="#">The parallax effect</a></li>
-                                <li><a href="#">Les étapes de création d'un site web</a></li>
-                                <li><a href="#">Article</a></li>
-                            </ul> 
-                        </div> 
                     </div>
-                    <a href="#">CONTACTER MOI</a>
-                </div>
-            </div>
+                <!-- boutton dark-mode----------------------------------------- -->
+                <button id="theme-toggle" type="button" class=" text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                    <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                    <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                </button>
+            </div>    
         </nav>
     </header>
 
-    <aside class="bonbons -z-50  w-full absolute  h-full">
+    <aside class="bonbons -z-50  w-full absolute  h-full mt-0">
         <div  id="box1" class="drop-shadow-2xl absolute top-5 left-12"><img class="h-20 md:h-28 lg:h-40" src="assets/bonbon135.png" alt="bonbon 135" ></div>
         <div  id="box2" class="drop-shadow-2xl absolute bottom-36 right-2"><img class="h-36 md:h-52 lg:h-80" src="assets/bonbon136.png" alt="bonbon 136"></div> 
         <div  id="box3" class="drop-shadow-2xl absolute bottom-0 -left-3"><img class="h-60 md:h-64 lg:h-80" src="assets/bonbon137.png" alt="bonbon 137"></div> 
@@ -98,25 +108,24 @@
         <div  id="box5" class="drop-shadow-2xl absolute top-14 right-16 lg:right-96"><img class="h-20 md:h-32 lg:h-44" src="assets/bonbon140.png" alt="bonbon 140"></div>
     </aside> 
     <main class="w-full h-full">
-        <section id="nom" class ="flex justify-center items-center flex-col h-screen">
-            <div class="text-5xl md:text-7xl lg:text-9xl">
+        <section id="nom" class ="flex  items-center flex-col h-screen w-full">
+            <div class="text-5xl md:text-7xl lg:text-9xl ml-2 mt-28">
                 <p>hello,</p>
                 <p id="break-me">Je suis Elena </p>
                 <p>développeuse web fullstack</p>
             </div>
-            <div class="reseaux flex">
-                <div class="p-4"><img src="assets/github.webp" alt="icon GITHUB"></div> 
-                <div class="p-4"><img src="assets/linkedin.webp" alt="icon GITHUB"></div>
-                <div class="p-4"><img src="assets/codepen.webp" alt="icon GITHUB"></div>      
-            </div> 
-            <h2 class="text-3xl"><a href="#">à propos</a></h2>    
+            <div class="reseaux flex pt-6">
+                <div class="p-4"><img class="md:h-10 rounded-full hover:bg-[#8EECF5] active:bg-[#8EECF5] focus:outline-none focus:ring" src="assets/github.webp" alt="icon GITHUB"></div> 
+                <div class="p-4"><img class="md:h-10 rounded-full hover:bg-[#8EECF5] active:bg-[#8EECF5] focus:outline-none focus:ring" src="assets/linkedin.webp" alt="icon LINKEDIN"></div>
+                <div class="p-4"><img class="md:h-10 rounded-full hover:bg-[#8EECF5] active:bg-[#8EECF5] focus:outline-none focus:ring" src="assets/codepen.webp" alt="icon CODEPEN"></div>      
+            </div>    
         </section> 
         <section class="propos flex flex-col justify-center  w-full items-center h-full">
             <img class="h-60" src="assets/portrait.png" alt="portrait sur un fond rond de couleur bleu "> 
-            <div class="text-justify text-2xl p-6" id="propos">
+            <div class="text-2xl pt-6 flex-none w-10/12 text-[#90DBF4] border-b-2 border-[#90DBF4]" id="propos">
                 <p> à propos de moi </p> 
             </div>
-            <div class="text-xl text-justify w-10/12">
+            <div class="text-xl text-justify w-10/12 pt-4">
                 <p>
                  Je suis  une développeuse web junior  avec des compétences en développement front-end.   
                  Je développe des sites Web avec HTML, CSS et JavaScript. J’utilise également des frameworks, PHP et SQL. J'ai des compétences dans l'utilisation de logiciel de conception comme Figma.
@@ -124,8 +133,7 @@
                 </p>
             </div>
             <div class="p-6"> <button type="submit" class="text-xl w-64 bg-[#90DBF4] hover:bg-[#8EECF5]  h-12 drop-shadow-lg rounded-md">Télécharger mon CV</button>   </div>
-            
-            <!-- <figure class="absolute -z-10  drop-shadow-2xl"><img class="h-32" src="assets/bonbon140.png" alt="bonbon 140"></figure> -->
+            <figure class="absolute -z-10  drop-shadow-2xl ml-56 mb-20 h-full"><img class="h-32" src="assets/bonbon140.png" alt="bonbon 140"></figure>
         </section>
         <section class="projet w-full pt-6 flex flex-col justify-center items-center">
             <p class="text-5xl border-b-2 border-[#90DBF4] w-10/12">MES PROJETS</p>
@@ -152,17 +160,14 @@
                         Le site  contien une présentation du restaurant,  la carte, un formulaire de contact et un back-office permettant d’éditer le menu. 
                         Il est  responsive et dynamique. Le back-office  permet d’ajouter, modifier ou supprimer un élément du menu. 
                         Formulaire de contact permet d’envoyer un mail.</p>
-                        <div class="hover:text-[#90DBF4] cursor-pointer  border-b-2 border-[#90DBF4] text-xl w-10/12 pt-6">acceder au site</div>
+                        <div class="hover:text-[#90DBF4] cursor-pointer border-b-2 border-[#90DBF4] text-xl w-10/12 pt-6">acceder au site</div>
                 </div>
-                
                 <div class="images flex flex-col justify-center items-center w-full pt-6">
                  <img class="pt-6" src="assets/resto_page1.png"  alt="page principale de projet restaurant dans l'ecran de mac">
                  <img class="pt-6" src="assets/resto_page2.png"  alt="page de contact de projet restaurant dans l'ecran de mac">
                  <img class="pt-6" src="assets/resto_resp.png"  alt="representation responsive de projet restaurant dans l'ecran d'iphone">
                 </div>
-            </div>
-            
-
+            </div>     
         </section>
     </main>
     <footer class="flex text-xs justify-between p-4 bottom-0 w-full">
@@ -171,5 +176,6 @@
     </footer>
  <script src="script_nav.js"></script>   
  <script src="animation.js"></script>
+ <script src="dark_mode.js"></script>
 </body>
 </html>
