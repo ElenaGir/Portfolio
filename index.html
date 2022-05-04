@@ -25,12 +25,13 @@
     <link rel="stylesheet" href="./dist/output.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js" integrity="sha512-6zTDRWNxo8vI6JZYDCwhrJpg5icK3P4HNnW3czsO5Scb3lAoPDam+/wF3eog4hxcl0h44d0XlIcFkuoSaWHQ2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
-<body class="overflow-x-hidden bg-[#F7F7F7] dark:bg-[#262626]">
+<body class="overflow-x-hidden bg-[#F7F7F7] dark:bg-[#262626] dark:text-white">
     <header class="sticky top-0">
-        <nav class="p-2 backdrop-blur-sm bg-white/30"> 
+        <nav class="p-2 backdrop-blur-sm dark:backdrop-blur-none"> 
             <div class="flex w-full justify-between">
-                <p class="logo text-xl"> elena girard</p>
-                <!-- ------menu accordeon----------------------------------------------- -->
+                <!-- logo--------------------------------------------------------------- -->
+                <p class="logo text-xl w-4"> elena girard</p>
+                <!-- ------input bulles----------------------------------------------------- -->
                 <div class="">
                     <input type="checkbox" id="burger-checkbox" class="hidden">
                     <label for="burger-checkbox">
@@ -45,6 +46,7 @@
                             <div class='bul2' id='bulle6'></div>  
                         </div>
                     </label>
+                    <!-- menu accordeon---------------------------------------------------------- -->
                     <div class="menu-wrapper fixed flex justify-center top-44 text-3xl lg:text-7xl ">
                         <div class="navigation">
                             <a href="#">SAVOIR PLUS</a>
@@ -160,7 +162,7 @@
                         Le site  contien une présentation du restaurant,  la carte, un formulaire de contact et un back-office permettant d’éditer le menu. 
                         Il est  responsive et dynamique. Le back-office  permet d’ajouter, modifier ou supprimer un élément du menu. 
                         Formulaire de contact permet d’envoyer un mail.</p>
-                        <div class="hover:text-[#90DBF4] cursor-pointer border-b-2 border-[#90DBF4] text-xl w-10/12 pt-6">acceder au site</div>
+                    <div class="hover:text-[#90DBF4] cursor-pointer border-b-2 border-[#90DBF4] text-xl w-10/12 pt-6">acceder au site</div>
                 </div>
                 <div class="images flex flex-col justify-center items-center w-full pt-6">
                  <img class="pt-6" src="assets/resto_page1.png"  alt="page principale de projet restaurant dans l'ecran de mac">
