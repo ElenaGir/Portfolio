@@ -599,16 +599,60 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 7rem;
 }
 
-.ml-56 {
-  margin-left: 14rem;
+.-ml-40 {
+  margin-left: -10rem;
 }
 
-.mb-20 {
-  margin-bottom: 5rem;
+.mt-80 {
+  margin-top: 20rem;
+}
+
+.mt-40 {
+  margin-top: 10rem;
+}
+
+.ml-64 {
+  margin-left: 16rem;
 }
 
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.ml-52 {
+  margin-left: 13rem;
+}
+
+.-mt-16 {
+  margin-top: -4rem;
+}
+
+.mt-64 {
+  margin-top: 16rem;
+}
+
+.mt-\[30rem\] {
+  margin-top: 30rem;
+}
+
+.ml-56 {
+  margin-left: 14rem;
+}
+
+.mt-96 {
+  margin-top: 24rem;
+}
+
+.mt-60 {
+  margin-top: 15rem;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
 }
 
 .flex {
@@ -653,6 +697,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-32 {
   height: 8rem;
+}
+
+.h-28 {
+  height: 7rem;
 }
 
 .w-full {
@@ -812,9 +860,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1rem;
 }
 
-.text-gray-500 {
+.text-black {
   --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-\[\#90DBF4\] {
@@ -870,11 +918,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .navigation a {
-  color: black;
   transition: all .2s ease-in-out;
 }
 
-/* nav soulignement------------ */
+/* animation nav soulignement---------------------------------------------------- */
 
 .navigation a:hover {
   color: #90DBF4;
@@ -920,7 +967,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   list-style:none;
   margin-bottom:2px;
   text-decoration: none;
-  color: black;
 }
 
 /* ----------------- ------------*/
@@ -1043,11 +1089,6 @@ main {
 .dark .dark\:text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.dark .dark\:text-gray-400 {
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .dark .dark\:backdrop-blur-none {

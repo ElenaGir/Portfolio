@@ -27,11 +27,11 @@
 </head>
 <body class="overflow-x-hidden bg-[#F7F7F7] dark:bg-[#262626] dark:text-white">
     <header class="sticky top-0">
-        <nav class="p-2 backdrop-blur-sm dark:backdrop-blur-none"> 
+        <nav class="p-2 backdrop-blur-sm dark:backdrop-blur-none "> 
             <div class="flex w-full justify-between">
-                <!-- logo--------------------------------------------------------------- -->
+  <!-- logo-->
                 <p class="logo text-xl w-4"> elena girard</p>
-                <!-- ------input bulles----------------------------------------------------- -->
+ <!-- input bulles-->
                 <div class="">
                     <input type="checkbox" id="burger-checkbox" class="hidden">
                     <label for="burger-checkbox">
@@ -46,15 +46,15 @@
                             <div class='bul2' id='bulle6'></div>  
                         </div>
                     </label>
-                    <!-- menu accordeon---------------------------------------------------------- -->
-                    <div class="menu-wrapper fixed flex justify-center top-44 text-3xl lg:text-7xl ">
-                        <div class="navigation">
+ <!-- menu accordeon-->
+                    <div class="menu-wrapper fixed flex justify-center top-44 text-3xl lg:text-7xl dark:text-white">
+                        <div class="navigation  dark:text-white">
                             <a href="#">SAVOIR PLUS</a>
                             <div class="container">
                                 <div class="question mt-10">
                                     <a href="#">VOIR MES PROJETS</a>
                                 </div>
-                                <div class="answercont text-2xl lg:text-7xl">
+                                <div class="answercont text-2xl lg:text-7xl dark:text-white">
                                     <ul>
                                         <li><a href="#">RESTAURANT</a></li>
                                         <li><a href="#">GITHUB</a></li>
@@ -93,15 +93,15 @@
                             </div>
                         </div>
                     </div>
-                <!-- boutton dark-mode----------------------------------------- -->
-                <button id="theme-toggle" type="button" class=" text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+ <!-- boutton dark-mode-->
+                <button id="theme-toggle" type="button" class=" text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
                     <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
                     <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
                 </button>
             </div>    
         </nav>
     </header>
-
+<!-- bonbons page principale -->
     <aside class="bonbons -z-50  w-full absolute  h-full mt-0">
         <div  id="box1" class="drop-shadow-2xl absolute top-5 left-12"><img class="h-20 md:h-28 lg:h-40" src="assets/bonbon135.png" alt="bonbon 135" ></div>
         <div  id="box2" class="drop-shadow-2xl absolute bottom-36 right-2"><img class="h-36 md:h-52 lg:h-80" src="assets/bonbon136.png" alt="bonbon 136"></div> 
@@ -116,12 +116,14 @@
                 <p id="break-me">Je suis Elena </p>
                 <p>développeuse web fullstack</p>
             </div>
+ <!-- icons reseaux-->
             <div class="reseaux flex pt-6">
-                <div class="p-4"><img class="md:h-10 rounded-full hover:bg-[#8EECF5] active:bg-[#8EECF5] focus:outline-none focus:ring" src="assets/github.webp" alt="icon GITHUB"></div> 
-                <div class="p-4"><img class="md:h-10 rounded-full hover:bg-[#8EECF5] active:bg-[#8EECF5] focus:outline-none focus:ring" src="assets/linkedin.webp" alt="icon LINKEDIN"></div>
-                <div class="p-4"><img class="md:h-10 rounded-full hover:bg-[#8EECF5] active:bg-[#8EECF5] focus:outline-none focus:ring" src="assets/codepen.webp" alt="icon CODEPEN"></div>      
+                <div class="p-4"><a href="https://github.com/ElenaGir"target="_blank"><img class="md:h-10 rounded-full hover:bg-[#8EECF5] active:bg-[#8EECF5] focus:outline-none focus:ring" src="assets/github.webp" alt="icon GITHUB"></a></div> 
+                <div class="p-4"><a href="https://www.linkedin.com/in/elena-girard/"target="_blank"><img class="md:h-10 rounded-full hover:bg-[#8EECF5] active:bg-[#8EECF5] focus:outline-none focus:ring" src="assets/linkedin.webp" alt="icon LINKEDIN"></a></div>
+                <div class="p-4"> <a href="https://codepen.io/elenagir"target="_blank"><img class="md:h-10 rounded-full hover:bg-[#8EECF5] active:bg-[#8EECF5] focus:outline-none focus:ring" src="assets/codepen.webp" alt="icon CODEPEN"></a></div>      
             </div>    
         </section> 
+ <!--  a propos-->
         <section class="propos flex flex-col justify-center  w-full items-center h-full">
             <img class="h-60" src="assets/portrait.png" alt="portrait sur un fond rond de couleur bleu "> 
             <div class="text-2xl pt-6 flex-none w-10/12 text-[#90DBF4] border-b-2 border-[#90DBF4]" id="propos">
@@ -134,12 +136,18 @@
                  Étant une femme active et axée sur les résultats, je travaille toujours pour obtenir le meilleur résultat sur chaque projet sur lequel je mets ma main.    
                 </p>
             </div>
-            <div class="p-6"> <button type="submit" class="text-xl w-64 bg-[#90DBF4] hover:bg-[#8EECF5]  h-12 drop-shadow-lg rounded-md">Télécharger mon CV</button>   </div>
-            <figure class="absolute -z-10  drop-shadow-2xl ml-56 mb-20 h-full"><img class="h-32" src="assets/bonbon140.png" alt="bonbon 140"></figure>
+    <!-- telechargement cv-->
+            <div class="p-6"> <a href="assets/cv_elena_girard.pdf" target="_blank"><button type="submit" class="text-xl w-64 bg-[#90DBF4] hover:bg-[#8EECF5]  h-12 drop-shadow-lg rounded-md">Télécharger mon CV</button></a></div>
+ <!-- bonbon anim section a propos-->
+            <img class="h-32 -ml-40 mt-80 absolute -z-10 " id="box6" src="assets/bonbon140.png" alt="bonbon 140">
         </section>
+ <!--  section projets-->
         <section class="projet w-full pt-6 flex flex-col justify-center items-center">
-            <p class="text-5xl border-b-2 border-[#90DBF4] w-10/12">MES PROJETS</p>
-            <div class="projet1  w-full">
+            <h1 class="text-5xl border-b-2 border-[#90DBF4] w-10/12">MES PROJETS</h1>
+            <!-- projet1-->
+            <div class="projet1  w-full h-full"> 
+                <!-- bonbon -->
+                <div class="h-full  mt-40 ml-64 absolute"> <img class=" h-28 absolute -z-10" src="assets/bonbon150.png" alt="bonbon 150"></div>
                 <div class="head flex flex-col justify-center items-center">
                     <p class=" text-3xl  text-[#90DBF4] border-b-2 border-[#90DBF4] w-10/12 mt-6 flex-none ">SHUFFLE CAFE</p>
                     <div class="w-10/12 flex  space-x-10 pt-6">
@@ -147,7 +155,7 @@
                         <p class="w-36">
                             HTML5, CSS3, JS,
                             TAILWIND, GSAP,
-                            PHP, MYSQL,GITHUB
+                            PHP, MYSQL, GITHUB
                         </p>
                     </div>
                     <div class=" techno flex w-10/12 space-x-32 pt-2">
@@ -157,19 +165,62 @@
                 </div>
                 <div class="descrip flex flex-col justify-center items-center w-full pt-6">
                     <p class="flex-none w-10/12  text-[#90DBF4] border-b-2 border-[#90DBF4]">DESCRIPTION</p>
-                    <p class="w-10/12 text-xl text-justify pt-2">Le projet  d’un site web pour un restaurant.
+                    <p class="w-10/12 text-xl text-justify pt-2">Le projet  d’un site web pour un restaurant fictif.
                         Il à été créer pendant ma formation de developpeuse web. 
                         Le site  contien une présentation du restaurant,  la carte, un formulaire de contact et un back-office permettant d’éditer le menu. 
                         Il est  responsive et dynamique. Le back-office  permet d’ajouter, modifier ou supprimer un élément du menu. 
                         Formulaire de contact permet d’envoyer un mail.</p>
-                    <div class="hover:text-[#90DBF4] cursor-pointer border-b-2 border-[#90DBF4] text-xl w-10/12 pt-6">acceder au site</div>
+                    <div class="hover:text-[#90DBF4] cursor-pointer border-b-2 border-[#90DBF4] text-xl w-10/12 pt-6"><a href="https://elenag.promo-106.codeur.online/projet11/" target="_blank">acceder au site</a></div>
                 </div>
+                <!-- bonbon -->
+                <img class="absolute -z-10 h-32 ml-52 -mt-16" id="box7" src="assets/bonbon151.png" alt="bonbon 151">
+                <img class="absolute -z-10 h-36 mt-64" id="box8" src="assets/bonbon152.png" alt="bonbon 152">
+                <img class="absolute -z-10 h-32 mt-[30rem] ml-56" id="box9" src="assets/bonbon151.png" alt="bonbon 151">
                 <div class="images flex flex-col justify-center items-center w-full pt-6">
-                 <img class="pt-6" src="assets/resto_page1.png"  alt="page principale de projet restaurant dans l'ecran de mac">
-                 <img class="pt-6" src="assets/resto_page2.png"  alt="page de contact de projet restaurant dans l'ecran de mac">
-                 <img class="pt-6" src="assets/resto_resp.png"  alt="representation responsive de projet restaurant dans l'ecran d'iphone">
+                    <img class="pt-6" src="assets/resto_page1.png"  alt="page principale de projet restaurant dans l'ecran de mac">
+                    <img class="pt-6" src="assets/resto_page2.png"  alt="page de contact de projet restaurant dans l'ecran de mac">
+                    <img class="pt-6" src="assets/resto_resp.png"  alt="representation responsive de projet restaurant dans l'ecran d'iphone">
+                </div>  
+            </div>
+        </section> 
+        <!-- les labs -->
+        <section class="labs w-full pt-6 flex flex-col justify-center items-center">
+            <h1 class="text-5xl border-b-2 border-[#90DBF4] w-10/12">MES LABS</h1>
+            <!-- lab1-->
+            <div class="lab1  w-full h-full"> 
+                <!-- bonbon -->
+                <div class="h-full mt-40 ml-64 absolute"> <img class=" h-28 absolute -z-10" src="assets/bonbon150.png" alt="bonbon 150"></div>
+                <div class="head flex flex-col justify-center items-center">
+                    <p class=" text-3xl  text-[#90DBF4] border-b-2 border-[#90DBF4] w-10/12 mt-6 flex-none ">LAB FORMULAIRE DE CONTACT</p>
+                    <div class="w-10/12 flex  space-x-10 pt-6">
+                        <p class=" text-[#90DBF4]">TECHNOS UTILISÉES</p>
+                        <p class="w-36">
+                            HTML5, CSS3, JS,
+                            PHP, GITHUB
+                        </p>
+                    </div>
+                    <div class=" techno flex w-10/12 space-x-32 pt-2">
+                        <p class=" text-[#90DBF4] ">EQUIPE</p>
+                        <p>SEULE</p>
+                    </div>
                 </div>
-            </div>     
+                <div class="descrip flex flex-col justify-center items-center w-full pt-6">
+                    <p class="flex-none w-10/12  text-[#90DBF4] border-b-2 border-[#90DBF4]">DESCRIPTION</p>
+                    <p class="w-10/12 text-xl text-justify pt-2">Un petit lab pour decouvrire l'Ajax et le PHP.
+                        Ce lab consiste à créer un formulaire de contact, lequel permet d’envoyer un message sur une boite mail.
+                        Le formulaire est responsive et comporte 3 champ à remplir: nom, prénom et message.
+                        </p>
+                    <div class="hover:text-[#90DBF4] cursor-pointer border-b-2 border-[#90DBF4] text-xl w-10/12 pt-6"><a href="https://elenag.promo-106.codeur.online/contact/" target="_blank"> acceder au lab</a></div>
+                </div>
+                <!-- bonbon -->
+                <img class="absolute -z-10 h-32 ml-52 -mt-16" id="box7" src="assets/bonbon139.png" alt="bonbon 139">
+                <img class="absolute -z-10 h-32 mt-96 ml-3" id="box8" src="assets/bonbon141.png" alt="bonbon 141">
+                <img class="absolute -z-10 h-32 mt-60" id="box9" src="assets/bonbon141a.png" alt="bonbon 141a">
+                <div class="images flex flex-col justify-center items-center w-full pt-6">
+                    <img class="pt-6" src="assets/formulaire_1.png"  alt="page principale de lab formulaire de contact dans l'ecran de mac">
+                    <img class="pt-6" src="assets/formulaire_2.png"  alt="representation responsive de lab formulaire de contact dans l'ecran d'iphone">
+                </div>  
+            </div>                                 
         </section>
     </main>
     <footer class="flex text-xs justify-between p-4 bottom-0 w-full">
